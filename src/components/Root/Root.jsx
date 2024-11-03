@@ -1,9 +1,12 @@
-
-
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import { Outlet } from "react-router-dom";
 const Root = () => {
     return (
         <div>
-            <p className="bg-slate-600 text-blue-600">sagj</p>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
