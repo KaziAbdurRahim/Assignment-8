@@ -10,6 +10,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
 import DashBoard from './components/DashBoard/DashBoard';
 import Statistic from './components/Statistic/Statistic';
+import GadgetDetails from './components/GadgetDetails/GadgetDetails';
 
 
 
@@ -24,12 +25,17 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
+        path: 'gadgets/:gadgetId',
+        element: <GadgetDetails></GadgetDetails>,
+        loader:()=> fetch('/gadget.json')
+      },
+      {
         path: 'dashboard',
         element: <DashBoard></DashBoard>,
       },
       {
-        path:'statistic',
-        element:<Statistic></Statistic>,
+        path: 'statistic',
+        element: <Statistic></Statistic>,
       }
     ],
 
