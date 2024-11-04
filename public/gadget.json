@@ -1,0 +1,113 @@
+[
+    {
+      "product_id": "GAD001",
+      "product_title": "Wireless Bluetooth Earbuds",
+      "product_image": "https://via.placeholder.com/150?text=Earbuds",
+      "category": "Audio",
+      "price": 49.99,
+      "description": "High-quality Bluetooth earbuds with noise cancellation and long battery life.",
+      "Specification": ["Bluetooth 5.0", "Up to 10 hours of playtime", "Noise cancellation"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "GAD002",
+      "product_title": "Smartwatch Pro X",
+      "product_image": "https://via.placeholder.com/150?text=Smartwatch",
+      "category": "Wearables",
+      "price": 199.99,
+      "description": "Feature-packed smartwatch with fitness tracking, heart rate monitoring, and GPS.",
+      "Specification": ["1.8-inch AMOLED display", "Heart rate monitor", "Water-resistant up to 50m"],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": "GAD003",
+      "product_title": "4K Action Camera",
+      "product_image": "https://via.placeholder.com/150?text=Action+Camera",
+      "category": "Cameras",
+      "price": 129.99,
+      "description": "Compact and durable action camera with 4K resolution and waterproof case.",
+      "Specification": ["4K resolution", "Waterproof up to 30m", "Wide-angle lens"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "GAD004",
+      "product_title": "Portable Power Bank 20000mAh",
+      "product_image": "https://via.placeholder.com/150?text=Power+Bank",
+      "category": "Accessories",
+      "price": 34.99,
+      "description": "High-capacity power bank with fast charging and dual USB ports.",
+      "Specification": ["20000mAh capacity", "Fast charging", "Dual USB ports"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "GAD005",
+      "product_title": "Noise Cancelling Headphones",
+      "product_image": "https://via.placeholder.com/150?text=Headphones",
+      "category": "Audio",
+      "price": 89.99,
+      "description": "Over-ear headphones with active noise cancellation and premium sound quality.",
+      "Specification": ["Active noise cancellation", "Over-ear design", "20-hour battery life"],
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": "GAD006",
+      "product_title": "Smart Home Assistant",
+      "product_image": "https://via.placeholder.com/150?text=Smart+Assistant",
+      "category": "Smart Home",
+      "price": 79.99,
+      "description": "Voice-controlled smart home assistant with built-in speaker and smart home integration.",
+      "Specification": ["Voice control", "Built-in speaker", "Smart home integration"],
+      "availability": true,
+      "rating": 4.2
+    },
+    {
+      "product_id": "GAD007",
+      "product_title": "Tablet 10.1-inch HD Display",
+      "product_image": "https://via.placeholder.com/150?text=Tablet",
+      "category": "Tablets",
+      "price": 149.99,
+      "description": "10.1-inch HD tablet with long battery life and expandable storage.",
+      "Specification": ["10.1-inch HD display", "Expandable storage", "12-hour battery life"],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": "GAD008",
+      "product_title": "Wireless Charging Pad",
+      "product_image": "https://via.placeholder.com/150?text=Charging+Pad",
+      "category": "Accessories",
+      "price": 19.99,
+      "description": "Fast wireless charging pad compatible with all Qi-enabled devices.",
+      "Specification": ["Qi-enabled", "Fast charging", "Sleek design"],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "GAD009",
+      "product_title": "Gaming Mouse RGB",
+      "product_image": "https://via.placeholder.com/150?text=Gaming+Mouse",
+      "category": "Computers",
+      "price": 39.99,
+      "description": "Ergonomic gaming mouse with customizable RGB lighting and programmable buttons.",
+      "Specification": ["RGB lighting", "Programmable buttons", "High DPI sensor"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "GAD010",
+      "product_title": "4K UHD Projector",
+      "product_image": "https://via.placeholder.com/150?text=Projector",
+      "category": "Home Entertainment",
+      "price": 299.99,
+      "description": "High-resolution 4K projector with bright display and easy setup.",
+      "Specification": ["4K UHD resolution", "Bright display", "HDMI and USB inputs"],
+      "availability": false,
+      "rating": 4.6
+    }
+  ]
+  
