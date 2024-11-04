@@ -24,4 +24,4 @@ const addToStoredGLst = (id)=>{
         
 
 
-export {addToStoredGLst};
+export {addToStoredGLst, getStoredGList };

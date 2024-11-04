@@ -24,4 +24,4 @@ const addToStoredwLst = (id)=>{
         
 
 
-export {addToStoredwLst};
+export {addToStoredwLst,getStoredwGList};

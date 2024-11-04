@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import DashBoard from './components/DashBoard/DashBoard';
 import Statistic from './components/Statistic/Statistic';
 import GadgetDetails from './components/GadgetDetails/GadgetDetails';
+import ListedG from './components/ListedG/ListedG';
 
 
 
@@ -29,9 +30,15 @@ const router = createBrowserRouter([
         element: <GadgetDetails></GadgetDetails>,
         loader:()=> fetch('/gadget.json')
       },
+      // {
+      //   path:'listedg',
+      //   element: <ListedG></ListedG>
+
+      // },
       {
         path: 'dashboard',
         element: <DashBoard></DashBoard>,
+        loader: ()=> fetch('/gadget.json'),
       },
       {
         path: 'statistic',
