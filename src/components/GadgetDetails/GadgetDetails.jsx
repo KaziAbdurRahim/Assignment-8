@@ -2,6 +2,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 import { list } from "postcss";
+import {addToStoredGLst} from '../../utilities/utility'
+import {addToStoredwLst} from '../../utilities/utility2'
 const GadgetDetails = () => {
 
     const { gadgetId } = useParams();
@@ -23,6 +25,17 @@ const GadgetDetails = () => {
     } = gadget;
 
     const availabilityStatus = availability ? 'In Stock' : 'Sold Out';
+
+    const handleAddToCart=(id)=>{
+        addToStoredGLst(id);
+       
+
+    }
+
+    const handleWishList =(id) =>{
+        addToStoredwLst(id);
+
+    }
     return (
         <div >
             <div className="md:flex bg-base-100 shadow-xl p-3 rounded-lg border-2 ">
@@ -66,8 +79,8 @@ const GadgetDetails = () => {
                         <h2 className="bg-base-200 rounded-lg ml-3 p-1">{rating}</h2>
                     </div>
                     <div className="card-actions ">
-                        <button className="btn   bg-purple-500 rounded-3xl text-white ">Add to card</button>
-                        <button className="btn rounded-full">
+                        <button className="btn   bg-purple-500 rounded-3xl text-white " onClick={()=>handleAddToCart( product_id)}>Add to card</button>
+                        <button className="btn rounded-full" onClick={()=>handleWishList(product_id)}>
                             <FaRegHeart />
                         </button>
 
