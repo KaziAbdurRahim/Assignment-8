@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [isCartOpen, setIsCartOpen] = useState(false);
     const [isCollapseOpen, setIsCollapseOpen] = useState(false);
+
+    const navigate = useNavigate();
 
     const toggleCart = () => {
         setIsCartOpen(!isCartOpen);
@@ -85,7 +87,11 @@ const Navbar = () => {
                                 <span className="text-lg font-bold">8 Items</span>
                                 <span className="text-info">Subtotal: $999</span>
                                 <div className="card-actions">
-                                    <button className="btn btn-primary btn-block">View cart</button>
+                                    <button 
+                                        className="btn btn-primary btn-block"
+                                        onClick={() => navigate('/dashboard')}>
+                                        View cart
+                                    </button>
                                 </div>
                             </div>
                         </div>

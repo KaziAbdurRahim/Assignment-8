@@ -19,7 +19,7 @@ const Banner = () => {
             </div>
             
             {/* Banner Image Section */}
-            {/* <div className="flex justify-center mt-8 md:mt-12 absolute top-[80%] ">
+            <div className="flex justify-center mt-8 md:mt-12 absolute top-[80%] ">
                 <div className="w-full md:w-3/4 lg:w-2/3 p-4 border-2 rounded-xl backdrop-blur-lg">
                     <img
                         className="rounded-2xl object-cover w-full h-auto"
@@ -27,7 +27,7 @@ const Banner = () => {
                         alt="Banner"
                     />
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 };

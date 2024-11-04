@@ -1,17 +1,19 @@
 
 
-import './App.css'
 
-function App() {
-  
+
+function App({cost}) {
+  const costt=cost;
+  //console.log( costt,999);
 
   return (
     <>
-     
-      <h1 className='Bold text-sm text-blue-500'>Vite + React</h1>
+      
+      {costt}
+      
      
     </>
   )
 }
 
-export default App
+export default App;
