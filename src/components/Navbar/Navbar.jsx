@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink, useNavigate } from "react-router-dom";
-
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+// import { NavLink, useLocation } from 'react-router-dom';
 const Navbar = () => {
     const [isCartOpen, setIsCartOpen] = useState(false);
     const [isCollapseOpen, setIsCollapseOpen] = useState(false);
 
     const navigate = useNavigate();
+    const location = useLocation();
 
     const toggleCart = () => {
         setIsCartOpen(!isCartOpen);
@@ -17,7 +18,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar bg-base-100 relative">
+        <div className={`navbar bg-base-100 relative ${location.pathname === '/' ? 'bg-violet-600 text-white' : ''}`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div 
@@ -41,7 +42,7 @@ const Navbar = () => {
                     {isCollapseOpen && (
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className={`menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ${location.pathname === '/' ? ' text-black' : ''}`}>
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="statistic">Statistic</NavLink></li>
                             <li><NavLink to="dashboard">Dashboard</NavLink></li>

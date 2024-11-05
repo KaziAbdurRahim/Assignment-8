@@ -15,7 +15,7 @@ const Statistic = () => {
             </p>
              </div>
 
-             <div className='container mx-auto p-4'>
+             <div className='container mx-auto p-8 bg-base-200 rounded-lg'>
                 <h1 className='font-bold text-xl m-2'>Statistics</h1>
                 <Graph></Graph>
 

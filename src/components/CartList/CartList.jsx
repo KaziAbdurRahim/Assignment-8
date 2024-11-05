@@ -23,7 +23,7 @@ const CartList = ({ gadget, onRemove }) => {
     return (
         <div className="container mx-auto">
             <div className="flex justify-between border-2 rounded-lg mb-2">
-                <div className="flex p-2 ">
+                <div className="flex p-2 flex-col sm:flex-row">
                     <div>
                         <img className="w-[200px] rounded-lg" src={product_image} alt={product_title} />
                     </div>

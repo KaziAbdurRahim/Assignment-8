@@ -10,9 +10,9 @@ const Wishl = ({ gadget, onRemove, onAddToCart }) => {
     };
 
     return (
-        <div>
+        <div className="">
             <div className="flex justify-between border-2 rounded-lg mb-2">
-                <div className="flex p-2 items-center ">
+                <div className="flex flex-col sm:flex-row p-2 items-center ">
                     <div><img className="w-[200px] rounded-lg" src={product_image} alt={product_title} /></div>
                     <div className="p-3">
                         <h2 className="font-bold text-2xl">{product_title}</h2>

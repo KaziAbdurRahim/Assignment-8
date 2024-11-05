@@ -11,7 +11,9 @@ const DashBoard = () => {
                 From smart devices to the coolest accessories, we have it all!
             </p>
              </div>
-            <ListedG></ListedG>
+           <div className=" bg-base-200">
+           <ListedG></ListedG>
+           </div>
         </div>
     );
 };
