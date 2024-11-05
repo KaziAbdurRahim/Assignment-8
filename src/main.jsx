@@ -12,8 +12,8 @@ import DashBoard from './components/DashBoard/DashBoard';
 import Statistic from './components/Statistic/Statistic';
 import GadgetDetails from './components/GadgetDetails/GadgetDetails';
 
-import { ToastContainer} from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter([
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: 'gadgets/:gadgetId',
         element: <GadgetDetails></GadgetDetails>,
-        loader:()=> fetch('/gadget.json')
+        loader: () => fetch('/gadget.json')
       },
       // {
       //   path:'listedg',
@@ -40,11 +40,12 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <DashBoard></DashBoard>,
-        loader: ()=> fetch('/gadget.json'),
+        loader: () => fetch('/gadget.json'),
       },
       {
         path: 'statistic',
         element: <Statistic></Statistic>,
+        loader: () => fetch('/gadget.json'),
       }
     ],
 

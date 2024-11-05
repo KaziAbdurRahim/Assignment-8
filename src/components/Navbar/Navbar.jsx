@@ -98,7 +98,7 @@ const Navbar = () => {
                     )}
                 </div>
 
-                <div>
+                <div className="btn rounded-full btn-ghost" onClick={() => navigate('/dashboard')}>
                     <FaRegHeart />
                 </div>
             </div>

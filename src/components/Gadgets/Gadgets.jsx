@@ -13,7 +13,7 @@ const Gadgets = () => {
     },[])
     return (
         // mt-[10%]
-        <div className="flex flex-col mx-auto  md:flex-row">
+        <div className="flex flex-col mx-auto  md:flex-row  ">
            <div className="flex-col flex space-y-3 text-white gap-2">
            <button className="btn    bg-purple-500  rounded-3xl text-white">Audio</button>
            <button className="btn   bg-purple-500 rounded-3xl text-white">Wearables</button>
