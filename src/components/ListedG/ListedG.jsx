@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -7,14 +7,16 @@ import { getStoredwGList, removeFromStoredwList, addToStoredwLst } from '../../u
 import CartList from '../CartList/CartList.jsx';
 import Wishl from '../Wishl/Wishl.jsx';
 import { BiSort } from "react-icons/bi";
-
+import { toast } from 'react-toastify';  // Ensure toast is properly imported
+import check from '../../assets/Group.png';
 
 const ListedG = () => {
     const [cartLst, setCartList] = useState([]);
     const [totalCost, setTotalCost] = useState(0);
-   
     const [wishList, setWishList] = useState([]);
+    const [finalCost, setFinalCost] = useState(0); // New state for final purchase amount
     const allG = useLoaderData();
+    const modalRef = useRef(null);
 
     useEffect(() => {
         const storedG = getStoredGList();
@@ -61,20 +63,18 @@ const ListedG = () => {
     };
 
     const handlePurchase = () => {
+        setFinalCost(totalCost); // Store the total cost before clearing the cart
         setCartList([]);
         setTotalCost(0);
         localStorage.removeItem('added-list'); // Clear cart from local storage
-        toast("Purchase successful! Your cart is now empty.");
+        toast.success("Purchase successful! Your cart is now empty.");
+
+        // Show the modal
+        modalRef.current.showModal();
     };
-    //<App cost={totalCost.toFixed(2)}></App>
-
-   //console.log(totalCost.toFixed(2),22);
-
-  
 
     return (
         <div className="">
-            
             <Tabs className="align-middle items-center ">
                 <TabList className="bg-violet-500 flex justify-center space-x-4 py-2">
                     <Tab className="px-4 py-2 rounded-lg text-white bg-violet-600 cursor-pointer">Cart</Tab>
@@ -123,6 +123,18 @@ const ListedG = () => {
                     </div>
                 </TabPanel>
             </Tabs>
+
+            <dialog ref={modalRef} id="my_modal_1" className="modal">
+                <div className="modal-box items-center flex flex-col space-y-3">
+                    <img src={check} alt="" className=''/>
+                    <h3 className="font-bold text-lg">Payment Successfully</h3>
+                    <p className="py-4 text-sm">Thanks for purchasing.</p>
+                    <p className='text-sm'>Total: ${finalCost.toFixed(2)}</p> {/* Use finalCost here */}
+                    <div className="modal-action">
+                        <button className="btn w-full " onClick={() => modalRef.current.close()}>Close</button>
+                    </div>
+                </div>
+            </dialog>
         </div>
     );
 };
