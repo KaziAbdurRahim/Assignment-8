@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { useLoaderData } from 'react-router-dom';
 const Root = () => {
     const data = useLoaderData();
+    
     return (
         // 
         <div>

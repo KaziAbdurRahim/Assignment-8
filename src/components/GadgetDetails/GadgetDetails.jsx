@@ -50,7 +50,7 @@ const GadgetDetails = () => {
             </p>
              </div>
 
-            <div className="md:flex bg-base-100 shadow-xl p-3 rounded-lg border-2 ">
+            <div className="md:flex bg-base-100 shadow-xl p-3 rounded-lg border-2 container mx-auto mt-3">
                 <figure className="items-center
                 ">
                     <img
