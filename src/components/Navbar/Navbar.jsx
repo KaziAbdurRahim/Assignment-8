@@ -46,6 +46,7 @@ const Navbar = () => {
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="statistic">Statistic</NavLink></li>
                             <li><NavLink to="dashboard">Dashboard</NavLink></li>
+                            <li><NavLink to="faq">FAQ</NavLink></li>
                         </ul>
                     )}
                 </div>
@@ -56,6 +57,7 @@ const Navbar = () => {
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="statistic">Statistic</NavLink></li>
                     <li><NavLink to="dashboard">Dashboard</NavLink></li>
+                    <li><NavLink to="faq">FAQ</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">

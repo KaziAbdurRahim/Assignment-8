@@ -13,12 +13,14 @@ const Gadget = ({ gadget }) => {
         rating
     } = gadget;
 
+
     return (
-        <div className="card card-compact bg-base-100 lg:w-96 shadow-xl p-2">
+        <div>
+            <div className="card card-compact bg-base-100 lg:w-96 shadow-xl p-2">
             <figure>
                 <img
                 // product_image ||
-                    src={ "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}
+                    src={ product_image}
                     alt={product_title }
                     className="object-cover w-full h-48"
                 />
@@ -34,6 +36,7 @@ const Gadget = ({ gadget }) => {
                     </Link>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

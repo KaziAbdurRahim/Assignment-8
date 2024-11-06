@@ -11,7 +11,7 @@ import Home from './components/Home/Home';
 import DashBoard from './components/DashBoard/DashBoard';
 import Statistic from './components/Statistic/Statistic';
 import GadgetDetails from './components/GadgetDetails/GadgetDetails';
-
+import FAQ from './components/FAQ/FAQ';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -46,6 +46,10 @@ const router = createBrowserRouter([
         path: 'statistic',
         element: <Statistic></Statistic>,
         loader: () => fetch('/gadget.json'),
+      },
+      {
+        path: 'faq',
+        element: <FAQ></FAQ>,
       }
     ],
 

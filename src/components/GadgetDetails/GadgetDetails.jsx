@@ -4,7 +4,11 @@ import { CiStar } from "react-icons/ci";
 import { list } from "postcss";
 import {addToStoredGLst} from '../../utilities/utility'
 import {addToStoredwLst} from '../../utilities/utility2'
+import { useEffect } from "react";
 const GadgetDetails = () => {
+    useEffect(() => {
+        document.title = "Gadget Details | Gadget Heaven";
+    }, []);
 
     const { gadgetId } = useParams();
     const data = useLoaderData();
@@ -38,12 +42,20 @@ const GadgetDetails = () => {
     }
     return (
         <div >
+            <div className="bg-violet-500 p-6">
+             <h1 className="font-bold text-2xl text-center text-white mb-2">Gadgets Details</h1>
+            <p className="text-center text-sm text-white ">
+                Explore the latest gadgets that will take your experience to the next level. 
+                From smart devices to the coolest accessories, we have it all!
+            </p>
+             </div>
+
             <div className="md:flex bg-base-100 shadow-xl p-3 rounded-lg border-2 ">
-                <figure className="
+                <figure className="items-center
                 ">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                        alt="Movie" className="rounded-lg mx-auto" />
+                        src={product_image}
+                        alt="Movie" className="rounded-lg mx-auto w-[200px] h-auto object-cover align-middle " />
                 </figure>
                 <div className="pl-3 pt-3 md:pt0 space-y-2">
                     <h2 className="card-title font-bold text-2xl">{product_title}</h2>

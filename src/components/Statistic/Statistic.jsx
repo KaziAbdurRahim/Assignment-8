@@ -1,7 +1,10 @@
-
+import { useEffect } from 'react';
 import Graph from '../Graph/Graph';
 // import React, { PureComponent } from 'react';
 const Statistic = () => {
+    useEffect(() => {
+        document.title = "Statistics | Gadget Heaven";
+    }, []);
 
     // const allG = useLoaderData();
     // console.log(allG);

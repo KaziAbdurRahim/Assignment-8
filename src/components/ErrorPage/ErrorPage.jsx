@@ -1,6 +1,9 @@
 
-
+import { useEffect } from "react";
 const ErrorPage = () => {
+    useEffect(() => {
+        document.title = "Error | Gadget Heaven";
+    }, []);
     return (
         <div className="text-center  align-middle space-y-4">
             <h1 className="text-6xl font-bold">Page not Found</h1>

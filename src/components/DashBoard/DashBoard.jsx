@@ -1,7 +1,10 @@
 import ListedG from "../ListedG/ListedG";
-
+import { useEffect } from "react";
 
 const DashBoard = () => {
+    useEffect(() => {
+        document.title = "Dashboard | Gadget Heaven";
+    }, []);
     return (
         <div>
              <div className="bg-violet-500 p-6">

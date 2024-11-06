@@ -1,6 +1,6 @@
 import Bannerimg from '../../assets/banner.jpg';
 
-const Banner = () => {
+const Banner = ({  scrollToGadgets }) => {
     return (
         <div className="relative bg-violet-600 text-white pb-10">
             {/* Hero Section */}
@@ -12,7 +12,7 @@ const Banner = () => {
                     <p className="py-4 text-base md:text-lg">
                         Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                     </p>
-                    <button className="btn bg-white text-violet-600 rounded-3xl mt-4 md:mt-6">
+                    <button onClick={scrollToGadgets} className="btn bg-white text-violet-600 rounded-3xl mt-4 md:mt-6">
                         Shop Now
                     </button>
                 </div>
