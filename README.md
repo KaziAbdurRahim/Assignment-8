@@ -61,7 +61,7 @@ To run this project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/gadget-heaven.git
+   git clone https://github.com/KaziAbdurRahim/Assignment-8.git
    cd gadget-heaven
    ```
 
@@ -83,7 +83,7 @@ Happy browsing, and may you find your perfect gadget!
 
 
 
-**Git Repository link**: https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-KaziAbdurRahim
+**Git Repository link**: https://github.com/KaziAbdurRahim/Assignment-8
 
 **live link**: https://gadgethavean.netlify.app/
 
